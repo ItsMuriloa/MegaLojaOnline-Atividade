@@ -1,4 +1,15 @@
-#Documentos Privados
+# Documentos Privados
 docs/
+
+# Banco de dados local
 backend/*.db
+*.db
+
+# Python
 backend/__pycache__/
+__pycache__/
+*.pyc
+
+# Ambiente e SO
+.vercel
+.DS_Store

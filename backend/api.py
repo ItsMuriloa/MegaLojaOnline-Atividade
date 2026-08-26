@@ -46,7 +46,7 @@ class ApiHandler(BaseHTTPRequestHandler):
         query = parse_qs(parsed.query)
 
         try:
-            if path == "/":
+            if path in ("/", "/api"):
                 self.show_api_index()
             elif path == "/api/health":
                 self.respond_json({"status": "online", "database": str(DB_PATH.name)})
